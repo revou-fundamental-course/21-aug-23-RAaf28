@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas revou</title>
+    <link href="./css/index.css" rel="stylesheet">
+</head>
+<body>
+    <!-- ini header -->
+    <header class="header-wrapper">
+        <img class="logo" alt="logo revou" src="https://seeklogo.com/images/E/early-college-high-school-logo-C3843F12EF-seeklogo.com.png" height="300px">
+        <div class="menu">
+            <button><a href="#menu">Home</a></button>
+            <button><a href="#our-Profile">Our Profile</a></button>
+            <button><a href="#portfolio"> Achievement</a></button>
+            <button><a href="#user-form"> Message Us</a></button>
+        </div>
+
+    </header>
+    
+
+    <!-- ini main -->
+    <div class="main-content">
+        <h1>Hi <span id="nama">visitor</span>, welcome to Whisker Field Highschool website</h1>
+        <p>ini adalah website latihan pertama</p>
+        <button id="tombol" hidden>change name</button>
+
+        <div>
+            <img src="https://almasoem.sch.id/wp-content/uploads/2021/10/01-eskul-0024.jpg" class="img-slideshow" height="578px" width="100%"/>
+            <img src="https://smkn9-solo.sch.id/foto_berita/images/kbmonline%20corona2.jpeg" class="img-slideshow" height="578px" width="100%"/>
+            <img src="https://cdn06.pramborsfm.com/storage/app/media/Prambors/Editorial%202/Seragam%20sekolah-20221012132421.jpg?tr=w-800" class="img-slideshow" height="578px" width="100%"/>
+            <img src="https://pbs.twimg.com/media/Fsq-i-qaIAA4e9Q.jpg" class="img-slideshow" height="578px" width="100%"/>
+            <button onclick="plusDivs(-1)" hidden>previous</button>
+            <button onclick="plusDivs(1)" hidden>next</button>
+        </div>
+
+    </div>
+
+    <!-- Our profile -->
+    <div id="our-Profile">
+      <h1>Our Profile</h1>
+      <h3 class="vision">Vision</h3>
+      <br>
+      <p class="vision-content"><i>"At Whiskerfield High School, we envision a nurturing educational environment where every student is encouraged to embrace their curiosity, develop a lifelong love for learning, and cultivate the skills needed to become compassionate, responsible, and empowered global citizens."</i></p>
+      <br>
+      <h3 class="mission">Mission</h3>
+      <br>
+      <p class="mission-content"><i>"Our mission at Whiskerfield High School is to provide a holistic and innovative education that fosters intellectual, social, emotional, and physical growth. Through a combination of rigorous academics, creative exploration, and community engagement, we are committed to nurturing the unique potential of each student. We strive to cultivate critical thinking, ethical values, and a sense of leadership, empowering our students to make meaningful contributions to their communities and the world at large. By creating a safe and inclusive space, we aim to inspire a passion for learning that extends far beyond the classroom, enabling our students to thrive in an ever-evolving global landscape."</i></p>
+
+    </div>
+
+
+    <!-- ini profile -->
+    <div id="profile">
+       <h2><span class="facility"></span>Our Facilititation</span></h2>
+       <div class="profile-wrapper">
+        <div class="prf-item">
+          <img src="https://i.pinimg.com/736x/4f/01/67/4f0167d0418ad8032247abe3d46a25bf.jpg" alt="img" width="150px" height= "150px"class="prf-pic">
+          <p>Proffesional Teacher</p>
+          </div>
+         <div class="prf-item">
+          <img src="https://img.freepik.com/free-vector/scene-with-trees-around-football-field_1308-37115.jpg" alt="img" width="150px" height= "150px"class="prf-pic">
+          <p>Sport Field</p>
+          </div>
+          <div class="prf-item">
+          <img src="https://cdn-cbeko.nitrocdn.com/YAysSGytvxeVxHWdRPueSoYmAixjAhdB/assets/images/optimized/rev-f65e9ad/welovecatsandkittens.com/wp-content/uploads/2019/06/tombi-1.jpg" alt="img" width="150px" height= "150px"class="prf-pic">
+          <p>Classroom</p>
+          </div>
+    </div>
+    
+    <!-- ini form -->
+    <div class="container">
+      <h1>Message Us</h1>
+        <div class="form-container">
+          <form id="user-form">
+            <div>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name">
+              <div class="error-message" id="name-error"></div>
+            </div>
+            <div>
+              <label for="birthdate">Birth Date:</label>
+              <input type="date" id="birthdate" name="birthdate">
+              <div class="error-message" id="birthdate-error"></div>
+            </div>
+            <div>
+              <label>Gender:</label>
+              <div>
+                <label><input type="radio" name="gender" value="Laki - laki"> Laki - laki</label>
+              </div>
+              <div>
+                <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+              </div>
+              <div class="error-message" id="gender-error"></div>
+            </div>
+            <div>
+              <label for="message">Message:</label>
+              <textarea id="message" name="message"></textarea>
+              <div class="error-message" id="message-error"></div>
+            </div>
+            <button type="button" class="submit-button" onclick="validateAndDisplay()">Submit</button>
+          </form>
+        </div>
+        <div class="summary-container" id="summary-box"></div>
+      </div>
+
+    <!-- ini footer -->
+    <div class="footer">
+        <footer>
+            made by raa.f
+        </footer>
+    </div>
+<script src="./js/script.js"></script>
+</body>
+</html>

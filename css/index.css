@@ -1,0 +1,176 @@
+*{
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  ;
+}
+ /* header */
+.header-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+  padding: 16px 24px;
+  background-image: none;
+}
+
+
+.header-wrapper>.menu{
+  display: flex;
+}
+
+.header-wrapper>.menu>button{
+  background-color: white;
+  padding: 8px 16px;
+  border: 1px solid gray;
+  cursor: pointer;
+  transition: 0.3s background-color ease-out ;
+  background-image: none;
+}
+
+.header-wrapper>.menu>button:hover{
+  background-color: gainsboro;
+}
+
+.header-wrapper>.menu>button:first-child{
+  border-radius: 4px 0 0 4px;
+}
+
+.header-wrapper>.menu>button:last-child{
+  border-radius: 0 4px 4px 0;
+}
+
+.header-wrapper>.logo{
+  width: auto;
+  height: 40px;
+}
+
+a{
+  color: black;
+}
+
+  /* Visi Misi */
+ .vision {
+  padding-left: 20px;
+ }
+
+ .mission {
+  padding-left: 20px;
+ }
+
+ .vision-content {
+  padding-left: 50px;
+ }
+
+ .mission-content {
+  padding-left: 50px;
+  margin-bottom: 10px;
+ }
+
+/* bagian pesan */
+.container {
+  display: flex;
+  gap: 20px;
+  
+  margin: 0 auto;
+  border-top: 2px solid black;
+  width: 100%;
+}
+.form-container {
+  flex: 1;
+  margin: 5px;
+}
+.submit-button {
+  margin-top: 10px;
+}
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.summary-container {
+  flex: 1;
+  border: 2px solid black;
+  padding: 10px;
+  min-height: 200px;
+  margin: 20px;
+}
+
+  /* bagian profile */
+  #profile{
+    border-top: 2px solid black;
+    background-size: cover;
+  }
+
+  .profile-wrapper {
+    display: flex;
+   
+  }
+
+  .prf-item{
+    text-align: center;
+    margin: 50px;
+  }
+
+  .facility{
+    padding-left: 50px;
+  }
+
+ .prf-pic{
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .prf-item p{
+    margin-top: 10px;
+  }
+
+  .prf-pic:hover {
+    filter:grayscale(100%);
+    box-shadow: 3px 3px 1px gray;
+    transition: 0.5s;
+  }
+
+
+
+  #form{
+    border-top: 2px solid black;
+    padding: 5px;
+  }
+
+  
+
+
+  .footer{
+    border-top: 2px solid black;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+
+  @media only screen and (max-width:600px) {
+    .header-wrapper{
+      flex-direction: column;
+    }
+
+    .menu{
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .logo{
+      margin-bottom: 14px;
+    }
+  }
+
+  #tombol{
+    background-color: #ffde00;
+    border-radius: 5px;
+    float: right;
+    width: 100px;
+  }
+
+  .submit-button{
+    width: 200px;
+  }
